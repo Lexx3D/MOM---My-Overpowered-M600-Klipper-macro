@@ -19,7 +19,7 @@ Also tenderly called the Mother Of Macros by u/Woodcat64
 
  Save this file f.e. as /home/pi/klipper_config/m600.cfg to leave printer.cfg nice and clean
  then use [include /home/pi/klipper_config/M600.cfg] in your printer.cfg
- Don't forget to configure default values in [gcode_makro m600cfg] down below
+ Don't forget to configure default values in [gcode_makro m600cfg]
  
 
  Usage in CURA Slicer:
@@ -34,7 +34,7 @@ Also tenderly called the Mother Of Macros by u/Woodcat64
  the printer had when it was started, regardless of printer temperature at 0, 40 or 200
  It will check if temperature is high enough to extrude filament ( you have configured your 
  min_extrude_temp in printer.cfg [extruder] didn't you ?!?), if not it will use the default 
- temperature configured down below anyway.
+ temperature configured anyway.
 
 
  If the printer was not homed - therefore not knowing where it is - it will perform 
@@ -43,11 +43,8 @@ Also tenderly called the Mother Of Macros by u/Woodcat64
  -----------------------------------------------------
   THIS VERSION IS DESIGNED TO WORK ESPECIALLY WITH OCTOPRINT
  -----------------------------------------------------
- A working version for fluidd modified by u/radicalfight 
- ( Thanks for figuring that out! ) can be found here: 
- https://gist.github.com/unraze/801cb0402b67635d7566b2a1a3688a24
- 
- In Octoprint set Plugins -> Printer Dialogs -> Enable Support = Always
+
+In Octoprint set Plugins -> Printer Dialogs -> Enable Support = Always
  Thx to u/josolanes for mentioning the fix for this possible issue
 
  Those macros are in the magic box:
@@ -56,7 +53,7 @@ Also tenderly called the Mother Of Macros by u/Woodcat64
  Handle prompt response ( to communicate with octoprint )
 
  [JOBCENTER]
- Handles navigation inside the whole process ( better not to issue as terminal command )
+ Handles navigation inside the whole process ( not to be used as terminal command )
 
  [M125]
  Park head
